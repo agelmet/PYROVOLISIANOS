@@ -10,14 +10,18 @@
     <meta name="author" content="Advon Media">
     <meta name="robots" content="index, follow">
     
+    <!-- Favicon -->
     <link rel="icon" href="https://github.com/agelmet/PYROVOLISIANOS/blob/main/logooo.jpg?raw=true" type="image/jpeg">
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Tailwind Config for Custom Luxurious Palette -->
     <script>
         tailwind.config = {
             theme: {
@@ -96,11 +100,6 @@
             border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        /* Hero Image Split Effect */
-        .clip-path-hero {
-            clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
-        }
-
         /* Marquee specific */
         .marquee-container {
             display: flex;
@@ -124,14 +123,17 @@
         .service-card:hover { transform: translateY(-10px); box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.1); }
     </style>
 
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="bg-luxury-ice text-luxury-navy font-sans antialiased overflow-x-hidden selection:bg-luxury-slate selection:text-white">
 
+    <!-- Navigation -->
     <nav class="fixed w-full z-50 transition-all duration-500" id="navbar">
         <div class="max-w-7xl mx-auto px-6 py-4">
             <div class="glass-panel rounded-2xl flex justify-between items-center px-6 py-3 shadow-glass border border-gray-100">
                 <a href="#" class="flex items-center gap-3 group" onclick="window.scrollTo(0,0);">
+                    <!-- Uncropped, large logo with shadow and hover effect -->
                     <img src="https://github.com/agelmet/PYROVOLISIANOS/blob/main/logooo.jpg?raw=true" alt="Διονύσης Πυροβολισιάνος Logo" class="h-16 w-auto object-contain drop-shadow-xl transition-all duration-700 group-hover:scale-105 group-hover:drop-shadow-2xl">
                 </a>
                 
@@ -150,6 +152,7 @@
             </div>
         </div>
         
+        <!-- Mobile Menu -->
         <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl shadow-2xl hidden flex-col items-center py-8 space-y-6 border-t border-gray-100">
             <a href="#about" class="text-lg font-medium text-luxury-navy mobile-link">Η ΠΡΟΣΕΓΓΙΣΗ</a>
             <a href="#services" class="text-lg font-medium text-luxury-navy mobile-link">ΥΠΗΡΕΣΙΕΣ</a>
@@ -160,52 +163,42 @@
         </div>
     </nav>
 
-    <section class="relative min-h-[95vh] flex items-center pt-32 pb-20 overflow-hidden bg-luxury-dark">
+    <!-- Hero Section -->
+    <section class="relative min-h-[95vh] flex items-center justify-center pt-32 pb-20 overflow-hidden bg-luxury-dark text-center">
+        <!-- Background Image -->
         <div class="absolute inset-0 z-0">
-            <div class="w-full h-full bg-cover bg-center opacity-40 mix-blend-luminosity transform scale-105 transition-transform duration-[20s] hover:scale-110" style="background-image: url('https://raw.githubusercontent.com/agelmet/PYROVOLISIANOS/refs/heads/main/pyr4.png');"></div>
-            <div class="absolute inset-0 bg-gradient-to-r from-luxury-dark via-luxury-dark/90 to-transparent"></div>
+            <div class="w-full h-full bg-cover bg-center opacity-60 mix-blend-luminosity transform scale-105 transition-transform duration-[20s] hover:scale-110" style="background-image: url('https://raw.githubusercontent.com/agelmet/PYROVOLISIANOS/refs/heads/main/pyr4.png');"></div>
+            <!-- Overlay to ensure text readability -->
+            <div class="absolute inset-0 bg-luxury-dark/60"></div>
         </div>
 
-        <div class="max-w-7xl mx-auto px-6 w-full grid lg:grid-cols-2 gap-16 items-center relative z-20">
-            
-            <div class="animate-fade-in text-left">
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel-dark text-luxury-silver text-xs font-semibold tracking-widest mb-8 border border-white/10 uppercase">
+        <div class="max-w-4xl mx-auto px-6 w-full relative z-20 flex flex-col items-center">
+            <!-- Text Content -->
+            <div class="animate-fade-in flex flex-col items-center">
+                <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full glass-panel-dark text-luxury-silver text-xs font-semibold tracking-widest mb-8 border border-white/10 uppercase shadow-lg">
                     <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
                     Κλινικη Ψυχολογια & Ψυχοθεραπεια
                 </div>
                 <h1 class="text-5xl lg:text-7xl font-serif text-white leading-[1.15] mb-6 drop-shadow-2xl">
                     Επιστημονική Προσέγγιση & <span class="italic text-luxury-silver">Αποδοχή.</span>
                 </h1>
-                <p class="text-lg text-gray-300 mb-10 max-w-lg leading-relaxed font-light">
+                <p class="text-lg text-gray-200 mb-10 max-w-2xl leading-relaxed font-light drop-shadow-md">
                     Ο Διονύσης Πυροβολισιάνος, αδειούχος Ψυχολόγος - Ψυχοθεραπευτής, παρέχει εξειδικευμένη Γνωσιακή-Συμπεριφορική Ψυχοθεραπεία (CBT) με βαθιά αναλυτική ικανότητα και γνήσια ενσυναίσθηση.
                 </p>
-                <div class="flex flex-wrap items-center gap-5">
-                    <a href="#contact" class="px-8 py-4 bg-white text-luxury-dark rounded-full font-semibold hover:bg-luxury-ice transition-colors shadow-[0_0_30px_rgba(255,255,255,0.2)] flex items-center gap-2 group">
+                <div class="flex flex-wrap justify-center items-center gap-5">
+                    <a href="#contact" class="px-10 py-4 bg-white text-luxury-dark rounded-full font-semibold hover:bg-luxury-ice transition-colors shadow-[0_0_30px_rgba(255,255,255,0.2)] flex items-center gap-2 group">
                         ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ
                         <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
                     </a>
                 </div>
             </div>
-
-            <div class="relative h-[600px] w-full hidden lg:block animate-fade-in" style="animation-delay: 0.3s;">
-                <div class="absolute inset-0 rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 transform hover:-translate-y-2 transition-transform duration-700">
-                    <img src="https://raw.githubusercontent.com/agelmet/PYROVOLISIANOS/refs/heads/main/pyr4.png" alt="Διονύσης Πυροβολισιάνος" class="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-700">
-                </div>
-                <div class="absolute bottom-10 -left-8 z-30 glass-panel-dark p-5 rounded-2xl shadow-2xl flex items-center gap-4 animate-float border border-white/10 backdrop-blur-md">
-                    <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white shadow-inner">
-                        <i data-lucide="award" class="w-6 h-6"></i>
-                    </div>
-                    <div>
-                        <p class="text-sm font-bold text-white tracking-wide">MSc in Research Methods</p>
-                        <p class="text-xs text-luxury-silver">City University of London</p>
-                    </div>
-                </div>
-            </div>
         </div>
         
+        <!-- Gradient fade to next section -->
         <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-luxury-ice to-transparent z-20"></div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="py-24 px-6 bg-luxury-ice relative">
         <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-16 items-center">
             
@@ -238,6 +231,7 @@
         </div>
     </section>
 
+    <!-- Services Section -->
     <section id="services" class="py-24 px-6 bg-white relative">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-20 reveal">
@@ -248,6 +242,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 
+                <!-- Service 1 -->
                 <div class="service-card bg-luxury-ice p-10 rounded-[2rem] border border-gray-100 relative overflow-hidden reveal group">
                     <div class="w-14 h-14 bg-white shadow-sm rounded-2xl flex items-center justify-center mb-8 border border-gray-50">
                         <i data-lucide="brain-circuit" class="w-7 h-7 text-luxury-dark"></i>
@@ -262,6 +257,7 @@
                     </div>
                 </div>
 
+                <!-- Service 2 -->
                 <div class="service-card bg-luxury-dark p-10 rounded-[2rem] border border-luxury-navy relative overflow-hidden reveal reveal-delay-1 group shadow-2xl">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full blur-2xl"></div>
                     <div class="w-14 h-14 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center mb-8 border border-white/10">
@@ -277,6 +273,7 @@
                     </div>
                 </div>
 
+                <!-- Service 3 -->
                 <div class="service-card bg-luxury-ice p-10 rounded-[2rem] border border-gray-100 relative overflow-hidden reveal reveal-delay-2 group">
                     <div class="w-14 h-14 bg-white shadow-sm rounded-2xl flex items-center justify-center mb-8 border border-gray-50">
                         <i data-lucide="laptop" class="w-7 h-7 text-luxury-dark"></i>
@@ -295,6 +292,7 @@
         </div>
     </section>
 
+    <!-- The Laboratory of the Self -->
     <section id="laboratory" class="py-24 px-6 bg-luxury-dark text-white relative overflow-hidden">
         <div class="absolute top-0 right-0 w-[50vw] h-[50vw] bg-white/5 rounded-full blur-[120px] pointer-events-none transform translate-x-1/3 -translate-y-1/3"></div>
         
@@ -328,6 +326,7 @@
         </div>
     </section>
 
+    <!-- Space Gallery Section -->
     <section id="space" class="py-24 px-6 bg-luxury-ice">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16 reveal">
@@ -336,6 +335,7 @@
                 <p class="text-luxury-slate font-light">Ένας ασφαλής, ζεστός και καλαίσθητος χώρος στην καρδιά της Κυψέλης.</p>
             </div>
 
+            <!-- Images (Uncropped, True to size via object-contain/auto height, masonry layout) -->
             <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
                 <button class="w-full break-inside-avoid rounded-xl overflow-hidden group relative reveal bg-white shadow-sm" onclick="openLightbox('https://raw.githubusercontent.com/agelmet/PYROVOLISIANOS/refs/heads/main/pyr4.png')">
                     <img src="https://raw.githubusercontent.com/agelmet/PYROVOLISIANOS/refs/heads/main/pyr4.png" alt="Χώρος Γραφείου 1" class="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.02]">
@@ -359,6 +359,7 @@
         </div>
     </section>
 
+    <!-- Lightbox Modal -->
     <div id="lightbox" class="fixed inset-0 z-[100] bg-luxury-dark/95 flex items-center justify-center cursor-zoom-out" onclick="closeLightbox()">
         <button class="absolute top-6 right-6 text-white/50 hover:text-white transition-colors">
             <i data-lucide="x" class="w-10 h-10"></i>
@@ -366,6 +367,7 @@
         <img id="lightbox-img" src="" alt="Enlarged View" class="max-w-[95vw] max-h-[95vh] object-contain rounded-lg shadow-2xl cursor-default" onclick="event.stopPropagation()">
     </div>
 
+    <!-- Reviews Section -->
     <section id="reviews" class="py-24 bg-white overflow-hidden border-t border-gray-100 relative">
         <div class="max-w-7xl mx-auto px-6 mb-16 text-center reveal">
             <span class="text-luxury-slate font-semibold tracking-widest text-sm uppercase no-accents block mb-3">ΕΜΠΕΙΡΙΕΣ</span>
@@ -373,19 +375,24 @@
             <div class="w-20 h-0.5 bg-luxury-silver mx-auto mt-6"></div>
         </div>
 
+        <!-- Carousel -->
         <div class="w-full overflow-hidden relative pb-10">
             <div class="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
             <div class="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
             
             <div class="marquee-container animate-marquee">
+                <!-- Inner Track -->
                 <div class="flex space-x-6 px-3">
                     
+                    <!-- Review 1 -->
                     <div class="w-[350px] bg-luxury-ice p-8 rounded-2xl shadow-sm border border-gray-100 shrink-0 relative flex flex-col">
                         <div class="flex justify-between items-start mb-4">
                             <div class="flex items-center gap-1 text-[#fbbc05]">
                                 <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
                             </div>
-                            <svg class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                            <a href="https://www.google.com/search?client=safari&hs=WVf&sa=X&sca_esv=f6e2b0d3c292d9af&rls=en&biw=1728&bih=994&sxsrf=ANbL-n6fO2X7ocBjMsCCO3Goa02TRL6MKg:1780388703911&q=Διονύσης+Πυροβολισιάνος+Ψυχολόγος+-+Ψυχοθεραπευτής+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDGyMDE1MzMzMDUxMzc2NjYwNt_AyPiKMf3clHM7z-0_t_d87_nmc9vPNymcW3C-9XwjUGgTEO8-txMovPPcmnN7z-0HSa4ASraDJM73nNsMFtJFCO44txWoc-P5BiDder7l3DqgdFBqWWZqefEiVnrZBAA3rBh77wAAAA&rldimm=14284566605467333037&tbm=lcl&hl=en-GR&ved=2ahUKEwi3z4jikOiUAxWwxgIHHUsRKvYQ9fQKegQIRhAG#lkt=LocalPoiReviews" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform duration-300" title="Δείτε την αξιολόγηση στο Google">
+                                <svg class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                            </a>
                         </div>
                         <p class="text-luxury-navy text-sm mb-6 italic font-light grow">"Είχα την ευκαιρία να γνωρίσω από κοντά το έργο του Διονύση... Συνδυάζει άριστη επιστημονική κατάρτιση με γνήσια ενσυναίσθηση. Τον συστήνω ανεπιφύλακτα."</p>
                         <div class="border-t border-gray-200 pt-4 mt-auto">
@@ -394,12 +401,15 @@
                         </div>
                     </div>
 
+                    <!-- Review 2 -->
                     <div class="w-[350px] bg-luxury-ice p-8 rounded-2xl shadow-sm border border-gray-100 shrink-0 relative flex flex-col">
                         <div class="flex justify-between items-start mb-4">
                             <div class="flex items-center gap-1 text-[#fbbc05]">
                                 <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
                             </div>
-                            <svg class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                            <a href="https://www.google.com/search?client=safari&hs=WVf&sa=X&sca_esv=f6e2b0d3c292d9af&rls=en&biw=1728&bih=994&sxsrf=ANbL-n6fO2X7ocBjMsCCO3Goa02TRL6MKg:1780388703911&q=Διονύσης+Πυροβολισιάνος+Ψυχολόγος+-+Ψυχοθεραπευτής+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDGyMDE1MzMzMDUxMzc2NjYwNt_AyPiKMf3clHM7z-0_t_d87_nmc9vPNymcW3C-9XwjUGgTEO8-txMovPPcmnN7z-0HSa4ASraDJM73nNsMFtJFCO44txWoc-P5BiDder7l3DqgdFBqWWZqefEiVnrZBAA3rBh77wAAAA&rldimm=14284566605467333037&tbm=lcl&hl=en-GR&ved=2ahUKEwi3z4jikOiUAxWwxgIHHUsRKvYQ9fQKegQIRhAG#lkt=LocalPoiReviews" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform duration-300" title="Δείτε την αξιολόγηση στο Google">
+                                <svg class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                            </a>
                         </div>
                         <p class="text-luxury-navy text-sm mb-6 italic font-light grow">"Εξαιρετικός θεραπευτής και άνθρωπος! Με βοήθησε πάρα πολύ! Είμαι ευγνώμων!!"</p>
                         <div class="border-t border-gray-200 pt-4 mt-auto">
@@ -407,12 +417,15 @@
                         </div>
                     </div>
 
+                    <!-- Review 3 -->
                     <div class="w-[350px] bg-luxury-ice p-8 rounded-2xl shadow-sm border border-gray-100 shrink-0 relative flex flex-col">
                         <div class="flex justify-between items-start mb-4">
                             <div class="flex items-center gap-1 text-[#fbbc05]">
                                 <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
                             </div>
-                            <svg class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                            <a href="https://www.google.com/search?client=safari&hs=WVf&sa=X&sca_esv=f6e2b0d3c292d9af&rls=en&biw=1728&bih=994&sxsrf=ANbL-n6fO2X7ocBjMsCCO3Goa02TRL6MKg:1780388703911&q=Διονύσης+Πυροβολισιάνος+Ψυχολόγος+-+Ψυχοθεραπευτής+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDGyMDE1MzMzMDUxMzc2NjYwNt_AyPiKMf3clHM7z-0_t_d87_nmc9vPNymcW3C-9XwjUGgTEO8-txMovPPcmnN7z-0HSa4ASraDJM73nNsMFtJFCO44txWoc-P5BiDder7l3DqgdFBqWWZqefEiVnrZBAA3rBh77wAAAA&rldimm=14284566605467333037&tbm=lcl&hl=en-GR&ved=2ahUKEwi3z4jikOiUAxWwxgIHHUsRKvYQ9fQKegQIRhAG#lkt=LocalPoiReviews" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform duration-300" title="Δείτε την αξιολόγηση στο Google">
+                                <svg class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                            </a>
                         </div>
                         <p class="text-luxury-navy text-sm mb-6 italic font-light grow">"Εξαιρετικός θεραπευτής, προσηνής και άριστος επαγγελματίας"</p>
                         <div class="border-t border-gray-200 pt-4 mt-auto">
@@ -420,12 +433,15 @@
                         </div>
                     </div>
 
+                    <!-- Review 4 -->
                     <div class="w-[350px] bg-luxury-ice p-8 rounded-2xl shadow-sm border border-gray-100 shrink-0 relative flex flex-col">
                         <div class="flex justify-between items-start mb-4">
                             <div class="flex items-center gap-1 text-[#fbbc05]">
                                 <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
                             </div>
-                            <svg class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                            <a href="https://www.google.com/search?client=safari&hs=WVf&sa=X&sca_esv=f6e2b0d3c292d9af&rls=en&biw=1728&bih=994&sxsrf=ANbL-n6fO2X7ocBjMsCCO3Goa02TRL6MKg:1780388703911&q=Διονύσης+Πυροβολισιάνος+Ψυχολόγος+-+Ψυχοθεραπευτής+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDGyMDE1MzMzMDUxMzc2NjYwNt_AyPiKMf3clHM7z-0_t_d87_nmc9vPNymcW3C-9XwjUGgTEO8-txMovPPcmnN7z-0HSa4ASraDJM73nNsMFtJFCO44txWoc-P5BiDder7l3DqgdFBqWWZqefEiVnrZBAA3rBh77wAAAA&rldimm=14284566605467333037&tbm=lcl&hl=en-GR&ved=2ahUKEwi3z4jikOiUAxWwxgIHHUsRKvYQ9fQKegQIRhAG#lkt=LocalPoiReviews" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform duration-300" title="Δείτε την αξιολόγηση στο Google">
+                                <svg class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                            </a>
                         </div>
                         <p class="text-luxury-navy text-sm mb-6 italic font-light grow">"Πολυ καλός επιστήμονας και καλός άνθρωπος! Σε κάνει να νιώθεις πολυ άνετα. Τον συνιστώ ανεπιφύλακτα."</p>
                         <div class="border-t border-gray-200 pt-4 mt-auto">
@@ -436,13 +452,17 @@
 
                 </div>
                 
+                <!-- Duplicate for seamless loop -->
                 <div class="flex space-x-6 px-3" aria-hidden="true">
+                    <!-- Review 1 -->
                     <div class="w-[350px] bg-luxury-ice p-8 rounded-2xl shadow-sm border border-gray-100 shrink-0 relative flex flex-col">
                         <div class="flex justify-between items-start mb-4">
                             <div class="flex items-center gap-1 text-[#fbbc05]">
                                 <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
                             </div>
-                            <svg class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                            <a href="https://www.google.com/search?client=safari&hs=WVf&sa=X&sca_esv=f6e2b0d3c292d9af&rls=en&biw=1728&bih=994&sxsrf=ANbL-n6fO2X7ocBjMsCCO3Goa02TRL6MKg:1780388703911&q=Διονύσης+Πυροβολισιάνος+Ψυχολόγος+-+Ψυχοθεραπευτής+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDGyMDE1MzMzMDUxMzc2NjYwNt_AyPiKMf3clHM7z-0_t_d87_nmc9vPNymcW3C-9XwjUGgTEO8-txMovPPcmnN7z-0HSa4ASraDJM73nNsMFtJFCO44txWoc-P5BiDder7l3DqgdFBqWWZqefEiVnrZBAA3rBh77wAAAA&rldimm=14284566605467333037&tbm=lcl&hl=en-GR&ved=2ahUKEwi3z4jikOiUAxWwxgIHHUsRKvYQ9fQKegQIRhAG#lkt=LocalPoiReviews" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform duration-300" title="Δείτε την αξιολόγηση στο Google">
+                                <svg class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                            </a>
                         </div>
                         <p class="text-luxury-navy text-sm mb-6 italic font-light grow">"Είχα την ευκαιρία να γνωρίσω από κοντά το έργο του Διονύση... Συνδυάζει άριστη επιστημονική κατάρτιση με γνήσια ενσυναίσθηση. Τον συστήνω ανεπιφύλακτα."</p>
                         <div class="border-t border-gray-200 pt-4 mt-auto">
@@ -450,36 +470,45 @@
                             <p class="text-[10px] text-gray-400">Local Guide</p>
                         </div>
                     </div>
+                    <!-- Review 2 -->
                     <div class="w-[350px] bg-luxury-ice p-8 rounded-2xl shadow-sm border border-gray-100 shrink-0 relative flex flex-col">
                         <div class="flex justify-between items-start mb-4">
                             <div class="flex items-center gap-1 text-[#fbbc05]">
                                 <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
                             </div>
-                            <svg class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                            <a href="https://www.google.com/search?client=safari&hs=WVf&sa=X&sca_esv=f6e2b0d3c292d9af&rls=en&biw=1728&bih=994&sxsrf=ANbL-n6fO2X7ocBjMsCCO3Goa02TRL6MKg:1780388703911&q=Διονύσης+Πυροβολισιάνος+Ψυχολόγος+-+Ψυχοθεραπευτής+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDGyMDE1MzMzMDUxMzc2NjYwNt_AyPiKMf3clHM7z-0_t_d87_nmc9vPNymcW3C-9XwjUGgTEO8-txMovPPcmnN7z-0HSa4ASraDJM73nNsMFtJFCO44txWoc-P5BiDder7l3DqgdFBqWWZqefEiVnrZBAA3rBh77wAAAA&rldimm=14284566605467333037&tbm=lcl&hl=en-GR&ved=2ahUKEwi3z4jikOiUAxWwxgIHHUsRKvYQ9fQKegQIRhAG#lkt=LocalPoiReviews" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform duration-300" title="Δείτε την αξιολόγηση στο Google">
+                                <svg class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                            </a>
                         </div>
                         <p class="text-luxury-navy text-sm mb-6 italic font-light grow">"Εξαιρετικός θεραπευτής και άνθρωπος! Με βοήθησε πάρα πολύ! Είμαι ευγνώμων!!"</p>
                         <div class="border-t border-gray-200 pt-4 mt-auto">
                             <p class="text-xs font-bold text-luxury-dark">Μαρία Ρουπακα</p>
                         </div>
                     </div>
+                    <!-- Review 3 -->
                     <div class="w-[350px] bg-luxury-ice p-8 rounded-2xl shadow-sm border border-gray-100 shrink-0 relative flex flex-col">
                         <div class="flex justify-between items-start mb-4">
                             <div class="flex items-center gap-1 text-[#fbbc05]">
                                 <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
                             </div>
-                            <svg class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                            <a href="https://www.google.com/search?client=safari&hs=WVf&sa=X&sca_esv=f6e2b0d3c292d9af&rls=en&biw=1728&bih=994&sxsrf=ANbL-n6fO2X7ocBjMsCCO3Goa02TRL6MKg:1780388703911&q=Διονύσης+Πυροβολισιάνος+Ψυχολόγος+-+Ψυχοθεραπευτής+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDGyMDE1MzMzMDUxMzc2NjYwNt_AyPiKMf3clHM7z-0_t_d87_nmc9vPNymcW3C-9XwjUGgTEO8-txMovPPcmnN7z-0HSa4ASraDJM73nNsMFtJFCO44txWoc-P5BiDder7l3DqgdFBqWWZqefEiVnrZBAA3rBh77wAAAA&rldimm=14284566605467333037&tbm=lcl&hl=en-GR&ved=2ahUKEwi3z4jikOiUAxWwxgIHHUsRKvYQ9fQKegQIRhAG#lkt=LocalPoiReviews" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform duration-300" title="Δείτε την αξιολόγηση στο Google">
+                                <svg class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                            </a>
                         </div>
                         <p class="text-luxury-navy text-sm mb-6 italic font-light grow">"Εξαιρετικός θεραπευτής, προσηνής και άριστος επαγγελματίας"</p>
                         <div class="border-t border-gray-200 pt-4 mt-auto">
                             <p class="text-xs font-bold text-luxury-dark">Ψυχολόγος Κωνσταντίνος Αϊτάκης</p>
                         </div>
                     </div>
+                    <!-- Review 4 -->
                     <div class="w-[350px] bg-luxury-ice p-8 rounded-2xl shadow-sm border border-gray-100 shrink-0 relative flex flex-col">
                         <div class="flex justify-between items-start mb-4">
                             <div class="flex items-center gap-1 text-[#fbbc05]">
                                 <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
                             </div>
-                            <svg class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                            <a href="https://www.google.com/search?client=safari&hs=WVf&sa=X&sca_esv=f6e2b0d3c292d9af&rls=en&biw=1728&bih=994&sxsrf=ANbL-n6fO2X7ocBjMsCCO3Goa02TRL6MKg:1780388703911&q=Διονύσης+Πυροβολισιάνος+Ψυχολόγος+-+Ψυχοθεραπευτής+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDGyMDE1MzMzMDUxMzc2NjYwNt_AyPiKMf3clHM7z-0_t_d87_nmc9vPNymcW3C-9XwjUGgTEO8-txMovPPcmnN7z-0HSa4ASraDJM73nNsMFtJFCO44txWoc-P5BiDder7l3DqgdFBqWWZqefEiVnrZBAA3rBh77wAAAA&rldimm=14284566605467333037&tbm=lcl&hl=en-GR&ved=2ahUKEwi3z4jikOiUAxWwxgIHHUsRKvYQ9fQKegQIRhAG#lkt=LocalPoiReviews" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform duration-300" title="Δείτε την αξιολόγηση στο Google">
+                                <svg class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                            </a>
                         </div>
                         <p class="text-luxury-navy text-sm mb-6 italic font-light grow">"Πολυ καλός επιστήμονας και καλός άνθρωπος! Σε κάνει να νιώθεις πολυ άνετα. Τον συνιστώ ανεπιφύλακτα."</p>
                         <div class="border-t border-gray-200 pt-4 mt-auto">
@@ -498,12 +527,13 @@
         </div>
     </section>
 
+    <!-- Footer / Contact -->
     <footer id="contact" class="bg-luxury-dark text-white pt-24 pb-10 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
                 
                 <div class="lg:col-span-2 reveal">
-                    <img src="https://github.com/agelmet/PYROVOLISIANOS/blob/main/logooo.jpg?raw=true" alt="Logo" class="h-16 w-auto object-contain mb-8 filter brightness-110 drop-shadow-md">
+                    <h3 class="text-2xl font-serif text-white mb-6">Διονύσης Πυροβολισιάνος</h3>
                     <p class="text-gray-400 max-w-sm mb-8 font-light">
                         Η επούλωση ξεκινά με ένα βήμα. Επικοινωνήστε μαζί μας για να ορίσουμε την πρώτη σας συνεδρία σε ένα περιβάλλον απόλυτης αποδοχής και επιστημονικής εγκυρότητας.
                     </p>
