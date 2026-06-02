@@ -47,7 +47,8 @@
                         'glow': '0 0 40px -10px rgba(99, 102, 241, 0.3)',
                     },
                     animation: {
-                        'marquee': 'marquee 40s linear infinite',
+                        'marquee-fast': 'marquee 20s linear infinite',
+                        'marquee-slow': 'marquee 40s linear infinite',
                         'float': 'float 6s ease-in-out infinite',
                         'fade-in': 'fadeIn 1.5s ease-out forwards',
                     },
@@ -380,7 +381,7 @@
             <div class="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
             <div class="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
             
-            <div class="marquee-container animate-marquee">
+            <div class="marquee-container animate-marquee-fast md:animate-marquee-slow">
                 <!-- Inner Track -->
                 <div class="flex space-x-6 px-3">
                     
@@ -520,9 +521,11 @@
             </div>
         </div>
         
-        <div class="text-center mt-12">
-            <a href="https://www.doctoranytime.gr/d/Psychologos/pyrovolisianos-dionysis" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 bg-luxury-dark rounded-full text-sm font-semibold text-white hover:bg-luxury-navy transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
-                Διαβάστε περισσότερα στο <img src="https://raw.githubusercontent.com/agelmet/KARAZOLI/refs/heads/main/lgoodoc.jpg" class="h-5 rounded-sm" alt="Doctoranytime">
+        <!-- Updated Google Reviews Button -->
+        <div class="text-center mt-12 relative z-20">
+            <a href="https://www.google.com/search?client=safari&hs=WVf&sa=X&sca_esv=f6e2b0d3c292d9af&rls=en&biw=1728&bih=994&sxsrf=ANbL-n6fO2X7ocBjMsCCO3Goa02TRL6MKg:1780388703911&q=Διονύσης+Πυροβολισιάνος+Ψυχολόγος+-+Ψυχοθεραπευτής+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDGyMDE1MzMzMDUxMzc2NjYwNt_AyPiKMf3clHM7z-0_t_d87_nmc9vPNymcW3C-9XwjUGgTEO8-txMovPPcmnN7z-0HSa4ASraDJM73nNsMFtJFCO44txWoc-P5BiDder7l3DqgdFBqWWZqefEiVnrZBAA3rBh77wAAAA&rldimm=14284566605467333037&tbm=lcl&hl=en-GR&ved=2ahUKEwi3z4jikOiUAxWwxgIHHUsRKvYQ9fQKegQIRhAG#lkt=LocalPoiReviews" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 bg-white border border-gray-200 rounded-full text-sm font-semibold text-luxury-dark hover:bg-gray-50 hover:border-gray-300 transition-all shadow-md hover:shadow-xl hover:-translate-y-1">
+                Διαβάστε περισσότερες αξιολογήσεις στο 
+                <svg class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
             </a>
         </div>
     </section>
