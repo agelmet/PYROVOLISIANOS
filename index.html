@@ -10,14 +10,18 @@
     <meta name="author" content="Advon Media">
     <meta name="robots" content="index, follow">
     
+    <!-- Favicon -->
     <link rel="icon" href="https://github.com/agelmet/PYROVOLISIANOS/blob/main/logooo.jpg?raw=true" type="image/jpeg">
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Tailwind Config for Custom Luxurious Palette -->
     <script>
         tailwind.config = {
             theme: {
@@ -105,14 +109,17 @@
         .service-card:hover { transform: translateY(-10px); box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.1); }
     </style>
 
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="bg-luxury-ice text-luxury-navy font-sans antialiased overflow-x-hidden selection:bg-luxury-slate selection:text-white">
 
+    <!-- Navigation -->
     <nav class="fixed w-full z-50 transition-all duration-500" id="navbar">
         <div class="max-w-7xl mx-auto px-6 py-4">
             <div class="glass-panel rounded-2xl flex justify-between items-center px-6 py-3 shadow-glass border border-gray-100">
                 <a href="#" class="flex items-center gap-3 group" onclick="window.scrollTo(0,0);">
+                    <!-- Uncropped, large logo with shadow and hover effect -->
                     <img src="https://github.com/agelmet/PYROVOLISIANOS/blob/main/logooo.jpg?raw=true" alt="Διονύσης Πυροβολισιάνος Logo" class="h-16 w-auto object-contain drop-shadow-xl transition-all duration-700 group-hover:scale-105 group-hover:drop-shadow-2xl">
                 </a>
                 
@@ -132,6 +139,7 @@
             </div>
         </div>
         
+        <!-- Mobile Menu -->
         <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl shadow-2xl hidden flex-col items-center py-8 space-y-6 border-t border-gray-100">
             <a href="#about" class="text-lg font-medium text-luxury-navy mobile-link">ΠΡΟΦΙΛ</a>
             <a href="#approach" class="text-lg font-medium text-luxury-navy mobile-link">ΠΡΟΣΕΓΓΙΣΗ</a>
@@ -143,13 +151,17 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="relative min-h-[95vh] flex items-center justify-center pt-32 pb-20 overflow-hidden bg-luxury-dark text-center">
+        <!-- Background Image -->
         <div class="absolute inset-0 z-0">
             <div class="w-full h-full bg-cover bg-center opacity-50 mix-blend-luminosity transform scale-105 transition-transform duration-[20s] hover:scale-110" style="background-image: url('https://raw.githubusercontent.com/agelmet/PYROVOLISIANOS/refs/heads/main/pyr4.png');"></div>
+            <!-- Overlay to ensure text readability -->
             <div class="absolute inset-0 bg-luxury-dark/70"></div>
         </div>
 
         <div class="max-w-4xl mx-auto px-6 w-full relative z-20 flex flex-col items-center">
+            <!-- Text Content -->
             <div class="animate-fade-in flex flex-col items-center">
                 <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full glass-panel-dark text-luxury-silver text-xs font-semibold tracking-widest mb-8 border border-white/10 uppercase shadow-lg">
                     <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
@@ -164,7 +176,7 @@
                 <p class="text-lg text-gray-200 mb-10 max-w-2xl leading-relaxed font-light drop-shadow-md mx-auto">
                     Γνωσιακή – Συμπεριφοριστική Θεραπεία και Θεραπεία Σχημάτων, σε ένα πλαίσιο συνεργασίας, σεβασμού και σταδιακής αλλαγής.
                 </p>
-                <div class="flex flex-wrap justify-center items-center gap-5">
+                <div class="flex flex-wrap justify-center items-center gap-5 relative z-30">
                     <a href="#contact" class="px-10 py-4 bg-white text-luxury-dark rounded-full font-semibold hover:bg-luxury-ice transition-colors shadow-[0_0_30px_rgba(255,255,255,0.2)] flex items-center gap-2 group">
                         ΕΠΙΚΟΙΝΩΝΙΑ
                         <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
@@ -173,13 +185,16 @@
             </div>
         </div>
         
-        <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-luxury-ice to-transparent z-20"></div>
+        <!-- Gradient fade to next section (pointer-events-none added to avoid blocking button clicks on mobile) -->
+        <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-luxury-ice to-transparent z-20 pointer-events-none"></div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="py-24 px-6 bg-luxury-ice relative">
         <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-16 items-center">
             
             <div class="lg:col-span-5 relative reveal flex justify-center lg:justify-start">
+                <!-- Image scaled down by approx 20% using width classes (w-4/5) -->
                 <div class="w-4/5 md:w-3/4 lg:w-4/5 aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border border-white relative z-10 group">
                     <img src="https://raw.githubusercontent.com/agelmet/PYROVOLISIANOS/refs/heads/main/pyr1.png" alt="Διονύσης Πυροβολισιάνος Ψυχολόγος" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-out">
                 </div>
@@ -204,15 +219,12 @@
         </div>
     </section>
 
+    <!-- Therapeutic Approach Section -->
     <section id="approach" class="py-24 px-6 bg-white relative">
         <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-20 reveal">
-                <h2 class="text-4xl md:text-5xl font-serif text-luxury-dark">Θεραπευτική προσέγγιση</h2>
-                <div class="w-20 h-0.5 bg-luxury-silver mx-auto mt-6"></div>
-            </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                 
+                <!-- CBT Card -->
                 <div class="service-card bg-luxury-ice p-10 md:p-12 rounded-[2rem] border border-gray-100 relative overflow-hidden reveal group shadow-soft">
                     <div class="w-14 h-14 bg-white shadow-sm rounded-2xl flex items-center justify-center mb-8 border border-gray-50">
                         <i data-lucide="brain-circuit" class="w-7 h-7 text-luxury-dark"></i>
@@ -224,6 +236,7 @@
                     </p>
                 </div>
 
+                <!-- Schema Therapy Card -->
                 <div class="service-card bg-luxury-dark p-10 md:p-12 rounded-[2rem] border border-luxury-navy relative overflow-hidden reveal reveal-delay-1 group shadow-2xl">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full blur-2xl"></div>
                     <div class="w-14 h-14 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center mb-8 border border-white/10">
@@ -240,6 +253,7 @@
         </div>
     </section>
 
+    <!-- Difficulties Addressed Section -->
     <section id="difficulties" class="py-24 px-6 bg-luxury-ice border-y border-gray-100">
         <div class="max-w-4xl mx-auto reveal">
             <div class="text-center mb-12">
@@ -299,6 +313,7 @@
         </div>
     </section>
 
+    <!-- Session Organization Section -->
     <section id="sessions" class="py-24 px-6 bg-white relative">
         <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
             
@@ -323,6 +338,7 @@
                 </div>
             </div>
 
+            <!-- Visual element for sessions -->
             <div class="relative hidden lg:block reveal reveal-delay-1">
                 <div class="grid grid-cols-2 gap-4">
                     <div class="space-y-4 mt-8">
@@ -351,6 +367,7 @@
         </div>
     </section>
 
+    <!-- Inclusion Section -->
     <section id="inclusion" class="py-24 px-6 bg-luxury-dark text-white relative overflow-hidden">
         <div class="absolute top-0 left-0 w-[50vw] h-[50vw] bg-white/5 rounded-full blur-[120px] pointer-events-none transform -translate-x-1/3 -translate-y-1/3"></div>
         
@@ -374,6 +391,7 @@
         </div>
     </section>
 
+    <!-- Space Gallery Section -->
     <section id="space" class="py-24 px-6 bg-luxury-ice">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16 reveal">
@@ -381,6 +399,7 @@
                 <p class="text-luxury-slate font-light">Ένας ασφαλής χώρος στο κέντρο της Αθήνας</p>
             </div>
 
+            <!-- Images (Uncropped, True to size via object-contain/auto height, masonry layout) -->
             <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
                 <button class="w-full break-inside-avoid rounded-xl overflow-hidden group relative reveal bg-white shadow-sm" onclick="openLightbox('https://raw.githubusercontent.com/agelmet/PYROVOLISIANOS/refs/heads/main/pyr4.png')">
                     <img src="https://raw.githubusercontent.com/agelmet/PYROVOLISIANOS/refs/heads/main/pyr4.png" alt="Χώρος Γραφείου 1" class="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.02]">
@@ -404,6 +423,7 @@
         </div>
     </section>
 
+    <!-- Lightbox Modal -->
     <div id="lightbox" class="fixed inset-0 z-[100] bg-luxury-dark/95 flex items-center justify-center cursor-zoom-out" onclick="closeLightbox()">
         <button class="absolute top-6 right-6 text-white/50 hover:text-white transition-colors">
             <i data-lucide="x" class="w-10 h-10"></i>
@@ -411,6 +431,7 @@
         <img id="lightbox-img" src="" alt="Enlarged View" class="max-w-[95vw] max-h-[95vh] object-contain rounded-lg shadow-2xl cursor-default" onclick="event.stopPropagation()">
     </div>
 
+    <!-- Footer / Contact -->
     <footer id="contact" class="bg-luxury-dark text-white pt-24 pb-10 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
